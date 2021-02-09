@@ -14,67 +14,36 @@ import {
   View,
   Text,
   StatusBar,
+  Image,
 } from 'react-native';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App: () => React$Node = () => {
+const App = () => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step On Me</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Are you winning son?????</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Gedebuk</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>
-                BELAJAR BELAJAR BELAJAR!!!
-              </Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
+    <View style={{width: 100, height: 100, backgroundColor: '#6ab04c'}}>
+      <Text>Skidipapak</Text>
+      <Text>Skidipapak</Text>
+      <Text>Skidipapak</Text>
+      <Text>Skidipapak</Text>
+      <Text>Skidipapak</Text>
+
+      <Bagaga />
+    </View>
   );
 };
 
-const styles = StyleSheet.create({
+const Bagaga = () => {
+  return (
+    <Image
+      source={{uri: 'https://placeimg.com/1000/800/nature'}}
+      style={{width: 300, height: 300}}
+    />
+  );
+};
+
+//const styles = StyleSheet.create({
+//  },
+/*
   scrollView: {
     backgroundColor: Colors.lighter,
   },
@@ -110,7 +79,7 @@ const styles = StyleSheet.create({
     padding: 4,
     paddingRight: 12,
     textAlign: 'right',
-  },
-});
+  },*/
+//});
 
 export default App;
