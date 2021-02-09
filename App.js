@@ -15,19 +15,24 @@ import {
   Text,
   StatusBar,
   Image,
+  TextInput,
 } from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const App = () => {
   return (
     <View style={{width: 100, height: 100, backgroundColor: '#6ab04c'}}>
-      <Text>Skidipapak</Text>
-      <Text>Skidipapak</Text>
-      <Text>Skidipapak</Text>
-      <Text>Skidipapak</Text>
-      <Text>Skidipapak</Text>
-
+      <Text>Skidipapak1</Text>
+      <Text>Skidipapak2</Text>
+      <Text>Skidipapak3</Text>
+      <Text>Skidipapak4</Text>
+      <Text>Skidipapak5</Text>
+      <TextInput />
+      <Text>Skidipapak6</Text>
+      <Text>Skidipapak7</Text>
+      <Text>Skidipapak8</Text>
       <Bagaga />
+      <TextInput style={{width: 300, borderWidth: 5, borderColor: '#7ed6df'}} />
     </View>
   );
 };
